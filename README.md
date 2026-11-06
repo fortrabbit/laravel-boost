@@ -4,12 +4,14 @@ Adds the fortrabbit agent skill to [Laravel Boost](https://github.com/laravel/bo
 
 ## Install
 
+Requires [Laravel Boost](https://laravel.com/docs/boost).
+
 ```sh
-composer require --dev fortrabbit/laravel-boost
+composer require --dev laravel/boost fortrabbit/laravel-boost
 php artisan boost:install
 ```
 
-Select `fortrabbit/laravel-boost` when Boost asks which third-party packages to use. With `--no-interaction`, Boost skips third-party packages. Boost writes the guideline into `CLAUDE.md` or `AGENTS.md` and copies the skill into each agent's skill folder, for example `.claude/skills/fortrabbit`.
+Select `fortrabbit/laravel-boost` when Boost asks which third-party packages to use. On a first install with `--no-interaction`, Boost skips third-party packages. Boost writes the guideline into `CLAUDE.md` or `AGENTS.md` and copies the skill into each agent's skill folder, for example `.claude/skills/fortrabbit`.
 
 ## Update
 
