@@ -9,7 +9,7 @@ composer require --dev fortrabbit/laravel-boost
 php artisan boost:install
 ```
 
-Select `fortrabbit/laravel-boost` when Boost asks which third-party packages to use. Boost writes the guideline into `CLAUDE.md` or `AGENTS.md` and copies the skill to `.ai/skills/fortrabbit` and each agent's skill folder.
+Select `fortrabbit/laravel-boost` when Boost asks which third-party packages to use. With `--no-interaction`, Boost skips third-party packages. Boost writes the guideline into `CLAUDE.md` or `AGENTS.md` and copies the skill into each agent's skill folder, for example `.claude/skills/fortrabbit`.
 
 ## Update
 
