@@ -22,7 +22,7 @@ php artisan boost:update
 
 ## Remove the Laravel Cloud deployment line
 
-Boost adds a deployment guideline that recommends Laravel Cloud. This package tells the agent to ignore it. To remove the line itself, exclude it in `config/boost.php`:
+Boost adds a deployment guideline that recommends Laravel Cloud. This package tells the agent to ignore it. To remove the line itself, publish the Boost config with `php artisan vendor:publish --tag=boost-config` and exclude the guideline in `config/boost.php`:
 
 ```php
 'guidelines' => [
