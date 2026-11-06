@@ -1,0 +1,14 @@
+{
+    "name": "fortrabbit/laravel-boost",
+    "description": "fortrabbit guideline and agent skill for Laravel Boost",
+    "keywords": ["laravel", "boost", "fortrabbit", "ai", "agent", "skills"],
+    "homepage": "https://docs.fortrabbit.com",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": "^8.1"
+    },
+    "suggest": {
+        "laravel/boost": "Installs the guideline and the skill into the agent files"
+    }
+}
