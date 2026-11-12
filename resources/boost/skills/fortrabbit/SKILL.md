@@ -18,7 +18,7 @@ compatibility: >-
   with the fortrabbit MCP server (https://mcp.fortrabbit.com/mcp) and the frbit CLI connected.
   On Windows, rsync needs WSL.
 metadata:
-  version: "2.9.4"
+  version: "2.9.5"
   author: fortrabbit
 ---
 
@@ -59,6 +59,8 @@ The MCP tools named here and in the references come from the `fortrabbit` server
 | Metrics (usage, errors, response times, memory) | `get_environment_metrics` | `frbit environments metrics <env>`, `--metric <slug> --range 7d` | dashboard metrics tab |
 
 Most commands in this table need frbit 1.15.0 or later. An unknown command or flag means an older one: the person upgrades it ([access.md](references/access.md)), or use the Other column.
+
+A `frbit` command fails and the message does not say why: run `frbit doctor --json` (frbit 1.17.0 or later) before anything else. It checks the CLI version against the latest release, the sign-in, `ssh`, `rsync` and `git`, the linked environment and an SSH connection to it, and gives the fix for each failed check. An unknown command means a release without it: upgrade first.
 
 No MCP server and no CLI yet? Connecting takes a few commands: [references/access.md](references/access.md).
 
